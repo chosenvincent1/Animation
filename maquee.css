@@ -1,0 +1,12 @@
+
+
+.animated-text {
+    font-size: 3rem;
+    color: green;
+    background-color: red;
+}
+
+.div {
+    display: flex;
+    position: relative;
+}

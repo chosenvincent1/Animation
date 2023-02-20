@@ -1,0 +1,68 @@
+
+
+h1, h2 {
+    text-align: center;
+}
+
+.outer-translate, .outer-scale, .outer-rotate, .outer-skew, .outer-origin, .outer-multiple {
+    width: 200px;
+    height: 200px;
+    border: 1px dashed red;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    
+}
+
+.inner-translate {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    /* Only X axis */
+    transform: translate(100px);
+    transform: translateX(100px);
+
+    /* Only Y axis */
+    transform: translate(0, 100px);
+    transform: translateY(100px);
+
+    /* Both axis */
+    transform: translate(100px, 100px);
+}
+
+.inner-scale {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform: scale(1.2, 1.2);
+}
+
+.inner-rotate {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform: rotate(60deg);
+}
+
+.inner-skew {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform: skew(10deg, 10deg);
+}
+
+.inner-origin {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform-origin: left bottom;
+    /* OR */
+    transform-origin: 0 100%;
+    transform: rotate(30deg);
+}
+
+.inner-multiple {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform: rotate(20deg) translate(20px, 20px) scale(1.2);
+}

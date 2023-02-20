@@ -1,0 +1,67 @@
+
+h1, h2 {
+    text-align: center;
+}
+
+.container {
+    background-color: #f3f3f3;
+}
+
+.transition {
+    width: 150px;
+    background-color: red;
+    transition-property: margin-left;
+    transition-duration: 2s;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    transition-property: margin-left;
+    transition-duration: 2s;
+}
+
+
+/* .ease {
+    transition-timing-function: ease;
+}
+.ease-in {
+    transition-timing-function: ease-in;
+}
+.ease-out {
+    transition-timing-function: ease-out;
+}
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+.linear {
+    transition-timing-function: linear;
+}
+.step-start {
+    transition-timing-function: step-start;
+}
+.step-end {
+    transition-timing-function: step-end;
+} */
+
+/* .step-start {
+    transition-timing-function: steps(10, start);
+}
+.step-end {
+    transition-timing-function: steps(10, end);
+} */
+
+.delay1 {
+    transition-delay: 1s;
+}
+.delay2 {
+    transition-delay: 2s;
+}
+.delay3 {
+    transition-delay: 3s;
+}
+.delay4 {
+    transition-delay: 4s;
+}
+
+.container:hover .transition {
+    margin-left: 50%;
+}

@@ -1,0 +1,61 @@
+
+h1 {
+    background-color: #3e0276;
+    padding-block: 50px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    font-family: sans-serif;
+    position: relative;
+    padding: 15px;
+}
+
+.first a::after {
+    content: '';
+    width: 100%;
+    height: 6px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 2s;
+}
+
+.first a:hover::after {
+    transform: scaleY(1);
+}
+
+.second a::after {
+    content: '';
+    width: 0;
+    height: 6px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 2s;
+}
+
+.second a:hover::after {
+    width: 100%;
+}
+
+.third a::after {
+    content: '';
+    width: 0;
+    height: 6px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: width 2s;
+}
+
+.third a:hover::after {
+    width: 100%;
+}
