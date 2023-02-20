@@ -22,13 +22,15 @@ a {
     position: absolute;
     bottom: 0;
     left: 0;
+    right: 0;
     transform: scaleX(0);
     transition: transform 2s;
 }
-
 .first a:hover::after {
     transform: scaleY(1);
 }
+
+
 
 .second a::after {
     content: '';
@@ -40,10 +42,11 @@ a {
     left: 0;
     transition: width 2s;
 }
-
 .second a:hover::after {
     width: 100%;
 }
+
+
 
 .third a::after {
     content: '';
@@ -55,7 +58,64 @@ a {
     right: 0;
     transition: width 2s;
 }
-
 .third a:hover::after {
+    width: 100%;
+}
+
+
+.forth a::before {
+    content: '';
+    width: 0;
+    height: 6px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 2s;
+}
+.forth a:hover::before {
+    width: 50%;
+}
+
+.forth a::after {
+    content: '';
+    width: 0;
+    height: 6px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: width 2s;
+}
+.forth a:hover::after {
+    width: 50%;
+}
+
+
+.fifth a::before {
+    content: '';
+    width: 0;
+    height: 6px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 2s;
+}
+.fifth a:hover::before {
+    width: 100%;
+}
+
+.fifth a::after {
+    content: '';
+    width: 0;
+    height: 6px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: width 2s;
+}
+.fifth a:hover::after {
     width: 100%;
 }
