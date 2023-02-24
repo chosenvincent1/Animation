@@ -15,12 +15,12 @@ body {
     margin: 50px auto;
     font-size: 18px;
     overflow: hidden;
+    margin: 50px;
 }
-.btn:hover {
+.btn1:hover {
     color: white;
 }
-
-.btn::before {
+.btn1::before {
     content: "";
     width: 0;
     height: 100%;
@@ -33,7 +33,16 @@ body {
     z-index: -1;
     color: white;
 }
-
-.btn:hover::before {
+.btn1:hover::before {
     width: 100%;
+}
+
+.btn2, .btn3 {
+    transition: transform 0.4s ease-in-out;
+}
+.btn2:hover {
+    transform: scale(1.2);
+}
+.btn3:hover {
+    transform: scale(0.7);
 }

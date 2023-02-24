@@ -1,37 +1,34 @@
-h1 {
+h2.first {
     background-color: #3e0276;
-    padding-block: 50px;
+    height: 100px;
     text-align: center;
 }
 
-a {
+.link {
     display: inline-block;
     text-decoration: none;
     color: #fff;
     font-size: 40px;
     font-family: sans-serif;
-    position: relative;
-    overflow: hidden;
-    background-color: red;
+    /* overflow: hidden; */
 }
 
 .initial-text {
     display: block;
 }
 
-.swipe a::after {
+.first .link::after {
     content: attr(data-swipe-text);
-    color: white;
     position: absolute;
-    bottom: -100%;
+    bottom: -100px;
     left: 0;
     right: 0;
     display: block;
 }
-.swipe a:hover {
+/* .swipe a:hover {
     transform: translateY(-100%);
 }
 
 .swipe a:hover::after {
     bottom: 0;
-}
+} */
