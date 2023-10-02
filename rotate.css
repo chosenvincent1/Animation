@@ -1,3 +1,24 @@
+body {
+    background: #222;
+}
+
+.image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+img {
+    height: 30%;
+    width: 30%;
+    margin: 0 auto;
+    display: inline-block;
+    color: white;
+    animation: InnerRotate 10s linear infinite;
+}
+
+
 .outer-rotate {
     width: 200px;
     height: 200px;
@@ -10,7 +31,7 @@
 .inner-rotate {
     width: 200px;
     height: 200px;
-    border: 1px solid black;
+    border: 1px solid white;
     animation: InnerRotate 10s linear infinite;
 }
 
@@ -23,3 +44,5 @@
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
 }
+
+
