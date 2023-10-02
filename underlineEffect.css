@@ -27,7 +27,7 @@ a {
     transition: transform 2s;
 }
 .first a:hover::after {
-    transform: scaleY(1);
+    transform: scaleX(1);
 }
 
 

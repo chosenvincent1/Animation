@@ -1,0 +1,20 @@
+.scale {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    margin: auto;
+}
+
+.scale:hover {
+    background-color: red;
+    transform: scale(1.5);
+}
+
+.scale:hover {
+    animation: resizeElement 1s;
+}
+
+@keyframes resizeElement {
+    from {transform: scale(1);}
+    to {transform: scale(1.5);}
+}

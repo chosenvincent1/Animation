@@ -2,37 +2,38 @@ h1 {
     text-align: center;
 }
 
-/* .first-div {
+.first-div {
     width: 80px;
     height: 80px;
     background-color: green;
     animation: moveAround 5s infinite;
 }
 @keyframes moveAround {
-    0% {margin-left: 0; margin-top: 0;}
+    0%, 100% {margin-left: 0; margin-top: 0;}
     25% {margin-left: 200px; margin-top: 0;}
     50% {margin-left: 200px; margin-top: 150px;}
     75% {margin-left: 0px; margin-top: 150px;}
-    100% {margin-left: 0; margin-top: 0;}
-} */
+    /* 100% {margin-left: 0; margin-top: 0;} */
+}
 
 /* .second-div {
     width: 80px;
     height: 80px;
     background-color: green;
-    animation-name: rotate;
+    animation-name: fish;
     animation-duration: 5s;
     animation-delay: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 
 }
-@keyframes rotate{
+
+@keyframes fish{
     0% {transform: rotate(0);}
     100% {transform: rotate(360deg);}
 } */
 
-.third-div {
+/* .third-div {
     width: 80px;
     height: 80px;
     background-color: green;
@@ -40,9 +41,14 @@ h1 {
     animation-duration: 2.5s;
     animation-delay: 2s;
     animation-iteration-count: infinite;
-    animation-fill-mode: backwards;
+    animation-fill-mode:forwards;
 }
 @keyframes fillmode {
     0% {margin-left: 0; background-color: red;}
     100% {margin-left: 200px; background-color: green;}
-}
+} */
+
+/* @keyframes testing {
+    from {}
+    to {}
+} */

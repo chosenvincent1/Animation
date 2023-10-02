@@ -1,0 +1,25 @@
+.outer-rotate {
+    width: 200px;
+    height: 200px;
+    border: 1px dashed red;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    animation: InnerRotate 10s linear infinite;
+}
+
+.inner-rotate {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    animation: InnerRotate 10s linear infinite;
+}
+
+@keyframes OutterRotate {
+    from {transform: rotate(-0deg);}
+    to {transform: rotate(-360deg);}
+}
+
+@keyframes InnerRotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}

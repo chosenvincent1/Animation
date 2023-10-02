@@ -10,13 +10,11 @@ h1, h2 {
 .transition {
     width: 150px;
     background-color: red;
-    transition-property: margin-left;
-    transition-duration: 2s;
     padding: 10px;
     margin: 10px;
     color: white;
     transition-property: margin-left;
-    transition-duration: 2s;
+    transition-duration: 2s; 
 }
 
 
